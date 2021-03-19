@@ -1,0 +1,54 @@
+.wrapper {
+	width: 400px;
+	height: 400px;
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+	border-radius: 40px;
+}
+
+.wrapper .elem {
+	position: absolute;
+	filter: blur(60px);
+	opacity: 0.8;
+}
+
+.animated .one {
+	border-radius: 100%;
+	width: 600px;
+	height: 600px;
+	background-color: #373372;
+	left: -50px;
+	top: -300px;
+	z-index: 3;
+	animation: fly 12s linear infinite;
+	transform: rotate(0) translate(80px) rotate(0);
+}
+.animated .two {
+	width: 500px;
+	height: 800px;
+	background-color: #7c336c;
+	bottom: -30px;
+	left: -80px;
+}
+.animated .three {
+	border-radius: 100%;
+	width: 450px;
+	height: 450px;
+	bottom: -80px;
+	right: -100px;
+	background-color: #b3588a;
+	animation: flyPlus 8s linear infinite;
+	transform: rotate(0) translate(100px) rotate(0);
+}
+
+@keyframes fly {
+	100% {
+		transform: rotate(1turn) translate(100px) rotate(-1turn);
+	}
+}
+@keyframes flyPlus {
+	100% {
+		transform: rotate(-1turn) translate(100px) rotate(1turn);
+	}
+}

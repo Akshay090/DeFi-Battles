@@ -1,4 +1,5 @@
 import {useCurrentFrame, useVideoConfig} from 'remotion';
+import AnimBackground from './Token/AnimBackground';
 import DollarIcon from './Token/Dollar';
 import EthLogo from './Token/eth-color-600.png';
 import {Text} from './Token/Text';
@@ -33,15 +34,7 @@ export const Token: React.FC<{}> = ({}) => {
 			>
 				<Title titleText={'ETH'} titleColor={color1} />
 				<div style={{display: 'flex', justifyContent: 'center'}}>
-					<div
-						style={{
-							backgroundColor: 'blue',
-							padding: '2rem',
-							borderRadius: '2rem',
-						}}
-					>
-						<img src={EthLogo} alt="eth-logo" width={400} />
-					</div>
+					<AnimBackground />
 				</div>
 				<div
 					style={{
